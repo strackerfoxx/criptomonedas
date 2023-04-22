@@ -24,7 +24,7 @@ export default function Header({setModal, modal}) {
     <header>
       <Link href={process.env.NEXT_PUBLIC_HOST + "/?offset=0"} onClick={handleReload}>
         <div className='logo'>
-            <Image src="/../public/img/logo.png" width={30} height={30} alt='logo'/>
+            <Image src="https://freepngimg.com/thumb/bitcoin/63412-cryptocurrency-ethereum-blockchain-bitcoin-exchange-free-clipart-hq.png" width={30} height={30} alt='logo'/>
             <h2>Foxx investment</h2>
         </div>
       </Link>
