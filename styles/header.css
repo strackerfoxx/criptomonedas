@@ -1,0 +1,100 @@
+header{
+    background-color: rgb(42, 42, 42);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    
+}
+.superior{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h2{
+    font-size: 1rem;
+}
+.buscador{
+    display: flex;
+}
+.buscador input{
+    width: 50vw;
+    border: 0;
+    background-color: grey;
+    height: 2rem;
+}
+.buscador button{
+    width: 2rem;
+    border: 0;
+    background-color: rgb(91, 91, 91);
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+.buscador button:hover{
+    background-color: rgb(61, 61, 61);
+    transition: ease-in-out 300ms;
+}
+nav{
+    display: flex;
+    font-size: .9rem;
+    align-items: center;
+    gap: 2rem;
+}
+.barras{
+    display: block;
+    margin: 0 0;
+    border: 0;
+    background-color: transparent;
+    margin-top: .5rem;
+    padding: 0;
+    margin-right: 5rem;
+}
+.barras div{
+    width: 2.5rem;
+    cursor: pointer;
+}
+@media (max-width: 582px) {
+    header{
+        display: block;
+    }
+    .logo{
+        justify-content: center;
+    }
+    .logo h2{
+        font-size: 1.5rem;
+    }
+    .buscador input{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .buscador button{
+        width: 2rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        
+    }
+    nav{
+        display: none;
+    }
+    .barras{
+        display: block;
+        margin: 0 0;
+        border: 0;
+        background-color: transparent;
+        margin-top: .5rem;
+        padding: 0;
+    }
+    .barras div{
+        width: 2.5rem;
+        cursor: pointer;
+    }
+    .container-barras{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1.8rem;
+    }
+}

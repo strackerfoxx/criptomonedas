@@ -1,0 +1,57 @@
+/* Define la animación */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Aplica la animación a los estilos del componente */
+  .box-modal{
+    width: 100%;
+    margin-left: -1rem;
+    margin-top: -1rem;
+    position: fixed;
+    height: 100vh;
+  } 
+   .container-modal{
+      display: flex;
+      justify-content: flex-end;
+  }
+  .modal{
+    margin-top: -13px;
+    margin-right: -1rem;
+    width: 15.7rem;
+    height: 100%;
+    background-color: rgb(67, 67, 67);
+    box-shadow: -3px 5px 10px black;
+    position: fixed;
+    opacity: 0;
+    animation: fadeIn 0.2s ease-in-out forwards;
+    text-align: center;
+  }
+  .modal button{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: ease-in-out 300ms;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+  }
+  .modal button:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: ease-in-out 300ms;
+  }
+  @media (max-width: 582px) {
+    .modal{
+        margin-top: 3.9rem;
+    }
+}
